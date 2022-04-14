@@ -30,7 +30,7 @@ namespace ChatServer
                 Stream = client.GetStream();
                 string message = GetMessage();
                 userName = message;
-                message += "вошёл в чат!";
+                message += " вошёл в чат!";
                 server.BroadcastMessage(message, this.Id);
                 Console.WriteLine(message);
 

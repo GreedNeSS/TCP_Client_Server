@@ -57,7 +57,7 @@ namespace ChatServer
 
         protected internal void BroadcastMessage(string message, string id)
         {
-            byte[] buffer = Encoding.Unicode.GetBytes(message);
+            byte[] buffer = Encoding.UTF8.GetBytes(message);
 
             foreach (var client in clients)
             {
